@@ -17,10 +17,16 @@ public class ComparatorInterfaceImpl
         System.out.println(comparator.compare(4,2));
 
         // implementing the same in lambda
-        Comparator<Integer> comparator1 = (Integer a, Integer b) -> {
+        Comparator<Integer> comparator1 = (a,b) -> {
             return a.compareTo(b);
         };
-        System.out.println(comparator1.compare(1,3));
+        System.out.println(comparator1.compare(2,4));
+
+        /*
+            a>b output is 1
+            a<b output is -1
+            a=b output is 0
+         */
     }
 
 }
